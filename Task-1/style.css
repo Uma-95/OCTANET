@@ -1,0 +1,154 @@
+*{
+    margin:0px;
+    padding: 0px ;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+   
+}
+
+html,body{
+    width:100%;
+    height:100%;
+}
+
+#main{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+#left{
+    position: relative;
+    
+    width: 40%;
+    height: 100%; 
+    background-color: white;
+    
+}
+
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: yellow;
+}
+
+#rtop{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: blue;
+}
+
+#rbottom{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(23, 178, 234);
+    background-image: url(https://affiliate-sale.com/wp-content/uploads/2020/04/Childrens-Clothing.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#rtopleft{
+    width: 45%;
+    height: 100%;
+    background-color: pink;
+    /* background-image: url(https://as2.ftcdn.net/v2/jpg/03/28/17/91/1000_F_328179199_8ScvKaQgRe7xPudytNf28jN4jXiSzChx.jpg); */
+    background-image: url(https://st4.depositphotos.com/11158102/23527/i/450/depositphotos_235270158-stock-photo-fashionable-concept-men-casual-wear.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#rtopright{
+    width: 55%;
+    height: 100%;
+    background-color: orange;
+    background-image: url(https://pm1.narvii.com/6637/42ea4323d6483ac253a80716c1a4acd1fa7b156a_hq.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#lnav{
+    display: flex;
+    justify-content: space-between;
+width: 100%;
+padding: 20px 30px;
+}
+
+#lnavr a{
+margin-right:20px;
+text-decoration: none;
+color: black;
+font-weight: 500;
+font-size:14px
+}
+
+#lnavr{
+    /* display flex makes it a flex box */
+    display: flex;
+    /* align-itmes: cross axis kosam */
+    align-items: center;
+    /* justify content main axis kosam */
+}
+
+
+#lnavr i{
+    /* color: rgb(23, 178, 234) */
+    color: black;
+}
+
+#left #textcenter{
+    /* to center a div inside div...relative position(parent) */
+    /* absolute(child) */
+    /* mention top aand left */
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+/* translate :translate an element horizontally and vertically, use the translate() */
+/* translate(right,bottom) */
+/* -for left and top */
+/* if you center it using flexbox...home work kuda center avtayi 
+anduke we used position to only center the textcenter div */
+}
+
+#textcenter h1{
+    font-size: 80px;
+    font-weight: 900;
+    /* font-weight property sets how thick or thin characters in text should be displayed. It can be specified using any one of the values such as normal,bold,bolder,lighter,number,initial and inherit. */
+}
+
+#textcenter p{
+    font-size: 13px;
+   opacity: .6;
+   /* ah black shade ni transparent chestadi */
+   line-height: 20px;
+   /* line-height property defines the amount of space above and below inline elements that are set to display: inline or display: inline-block. This property is most often used to set the leading for lines of text. */
+   margin-top: 20px;
+   margin-bottom: 20px;
+   /* for setting margin on top and bottom of p */
+}
+
+#textcenter a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0.6;
+
+}
+
+/* The text-decoration property specifies the decoration added to text, and is a shorthand property for:
+
+text-decoration-line (required)
+text-decoration-color
+text-decoration-style
+text-decoration-thickness */
+
+
+/* The background-size property specifies the size of the background images. */
+/* 	Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
+/* The background-position property sets the starting position of a background image. */
